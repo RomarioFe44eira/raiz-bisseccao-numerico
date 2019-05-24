@@ -1,0 +1,21 @@
+      __________________________________________________________
+      Function            Returns
+      -----------      ------------------------------------------
+      abs(x)            absolute value of x, |x|
+      acos(x)           arc-cosine  of x
+      asin(x)           arc-sine    of x  
+      atan(x)           arc-tangent of x
+      cos(x)            cosine      of x,  x is in radians.
+      cosh(x)           hyperbolic cosine of x, x is in radians
+      exp(x)            exponential function of x, base e
+      log(x)            log of x, base e
+      log10(x)          log of x, base 10
+      sin(x)            sine      of x, x is in radians
+      sinh(x)           hyperbolic sine of x, x is in radians
+      sqrt(x)           the square root of x
+      tan(x)            tangent of x, x is in radians
+      tanh(x)           hyperbolic tangent of x, x is in radians
+      ___________________________________________________________
+      Bessel, gamma, ibeta, igamma, and lgamma functions are also
+      supported.  Many functions can take complex arguments.
+      Binary and unary operators are also supported.  

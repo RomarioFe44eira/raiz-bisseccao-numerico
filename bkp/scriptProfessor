@@ -1,0 +1,16 @@
+// Método da Bisseção. Encontra uma raiz no intervalo
+deff('y=f(x)','y=x^(2)-sin(x)');  //função definida pelo comando deff
+xa=0.523;               //valor inicial de a=xa
+xb=1.5707;               //valor inicial de b=xb
+epsilon=0.1;        //tolerância (precisão desejada)
+Nmax=100;
+k=0;                  //contador de iterações
+while ((abs(xa-xb))>epsilon) & (k<Nmax)
+    k=k+1;
+    xm=(xa+xb)/2;
+    if f(xa)*f(xm)<0 then xb=xm;
+    else xa=xm;
+    end;
+end;
+disp(xm)   //Comando para exibir o último xm
+disp(k)    //Comnado para exibir a quantidade de iterações executadas

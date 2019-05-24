@@ -1,0 +1,106 @@
+ <!DOCTYPE html>
+  <html>
+    <head>
+      <!--Import materialize.css-->
+      <meta charset="utf-8">
+      <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+      <link rel="stylesheet" href="font-awesome-4.3.0/css/font-awesome.min.css">
+      <!--Let browser know website is optimized for mobile-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+      <link type="text/css" rel="stylesheet" href="css/index.css">
+      <link rel="shortcut icon" href="favicon (6).ico" type="image/x-icon">
+      <link rel="icon" href="favicon (6).ico" type="image/x-icon">
+      <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    </head>
+
+    <body class="teal lighten-2">
+
+	<div class="container" style="margin-top:90px;">
+		<div class="row">
+			<div class="col s12 m6 offset-m3">
+		  <div class="card-panel z-depth-5">
+		  <h4 class="center">Método da Bissecção</h4>	 
+<div class="row">
+  <form action="uTable.php" method="POST" class="col s12 m12">
+    
+    <div class="row">
+      <div class="input-field col s12 m12">
+        <input name="fx" id="fx" type="text" required class="validate">
+        <label for="fx">Função</label>
+      </div>
+      
+      <div class="input-field col s12 m12">
+        <input name="xa" id="xa" type="text" class="validate">
+      <label for="xa">Intervalo <b>a</b></label>
+      </div>
+      
+      <div class="input-field col s12 m12">
+        <input name="xb" id="xb" type="text" class="validate">
+        <label for="xb">Intervalo <b>b</b></label>
+      </div>
+      
+     <div class="input-field col s12 m12">
+        <input name="eps" id="eps" type="number" required min="-25" max="-1" class="validate">
+        <label for="eps">Precisão 10<sup>x</sup></label>
+      </div>
+      
+      <div class="input-field col s12 m12">
+        <input name="kmax" id="kmax" type="number" required min="0" max="250" class="validate">
+        <label for="kmax">Número máximo de iterações</label>
+      </div>
+    </div>
+    
+    </div><!--row-->
+        <button style="width: 100%" class="btn waves-effect waves-light tooltipped center" data-position="bottom" data-tooltip="Executa iterações pelo método da bissecção para encontrar uma raiz aproximada" type="submit" name="action" value="true">Executar</button>
+    </div><!--card-->
+    
+  </form>
+   
+
+
+
+</div><!--col-->
+  </div><!--row-->
+	</div><!--conatiner-->
+	
+    	
+    	
+      <!--Import jQuery before materialize.js-->
+      <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+      <script type="text/javascript" src="js/materialize.min.js"></script>
+	    
+	
+			 <script>
+          (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+          (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+          })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+          ga('create', 'UA-60673008-2', 'auto');
+          ga('send', 'pageview');
+
+         
+          document.addEventListener('DOMContentLoaded', function() {
+            var elems = document.querySelectorAll('select');
+            var instances = M.FormSelect.init(elems, options);
+          });
+        
+          // Or with jQuery
+        
+          $(document).ready(function(){
+            $('select').formSelect();
+          });
+         
+         
+         
+       
+        
+
+
+
+</script>
+	    
+	    
+	    
+    </body>
+  </html>
+        
